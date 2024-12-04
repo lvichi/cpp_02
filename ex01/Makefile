@@ -17,7 +17,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 RM = rm -fr
 FILES = src/*.cpp
 OBJS = obj/*.o
-INCLUDES = includes
+INCLUDES = includes/
 
 all: $(NAME)
 
