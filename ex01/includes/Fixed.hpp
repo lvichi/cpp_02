@@ -27,4 +27,8 @@ class Fixed {
 		Fixed	&operator=(const Fixed &original);
 		int		getRawBits() const;
 		void	setRawBits(const int raw);
+		float	toFloat() const;
+		int		toInt() const;
 };
+
+std::ostream	&operator<<(std::ostream &out, const Fixed &fixed);
