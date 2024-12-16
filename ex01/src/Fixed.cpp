@@ -33,8 +33,7 @@ Fixed::Fixed(const int number) {
 
 Fixed::Fixed(const float number) {
 	std::cout << "Float constructor called" << std::endl;
-	this->_number = int(number) * (1 << _fraction_bits);
-	this->_number += (number - int(number)) * (1 << _fraction_bits);
+	this->_number = int(number * (1 << _fraction_bits) + 0.5);
 }
 
 Fixed	&Fixed::operator=(const Fixed &original) {
